@@ -11,12 +11,7 @@ import androidx.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 import com.nimo.fb_effect.R;
-/**
- * @ClassName HtUploadBitmapUtils
- * @Description TODO 自定义上传图片
- * @Author lu guaiguai
- * @Date 2023/8/1 9:56
- */
+
 public class FBUploadBitmapUtils {
 
 

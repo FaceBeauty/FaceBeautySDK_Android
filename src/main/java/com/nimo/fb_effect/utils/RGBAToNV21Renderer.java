@@ -1,12 +1,3 @@
-/**
- * RGBAToNV12Renderer.java
- * HTEffect
- *
- * read rgba texture from gpu to nv21 byte array
- *
- * Created by HTLab on 2022/4/20
- * Copyright © 2023 TexelJoy Tech. All rights reserved.
- */
 
 package com.nimo.fb_effect.utils;
 

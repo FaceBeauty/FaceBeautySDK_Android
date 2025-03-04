@@ -121,9 +121,6 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
                tags = { @Tag(FBEventAction.ACTION_SYNC_PROGRESS) })
     public void syncProgress(Object o) {
 
-//        Log.e("面板1", FBState.currentViewState.name());
-//        Log.e("面板2", FBState.currentSecondViewState.name());
-//        Log.e("面板3", FBState.currentThirdViewState.name());
 
         //美颜——美颜
         if (FBState.currentViewState == FBViewState.BEAUTY

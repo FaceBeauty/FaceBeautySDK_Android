@@ -272,11 +272,6 @@ public class FBPanelLayout extends ConstraintLayout
   private void initData() {
     changeTheme(null);
 //    replaceView(new FBModeFragment(),"");
-
-
-
-
-
     // btnShutter.setOnClickListener(new OnClickListener() {
     //   @Override public void onClick(View v) {
     //     //点击拍照
@@ -329,11 +324,6 @@ public class FBPanelLayout extends ConstraintLayout
     //   }
     // });
 
-
-
-
-
-
     shutterIv.setOnClickListener(new OnClickListener() {
       @Override public void onClick(View v) {
         //点击拍照
@@ -345,21 +335,10 @@ public class FBPanelLayout extends ConstraintLayout
 
     ivReturn.setOnClickListener(new OnClickListener() {
       @Override public void onClick(View v) {
-        //返回上一级
-//        showPanel(FBViewState.BEAUTY_MAKE_UP);
+        //
       }
     });
 
-//    ivFbTrigger.setOnClickListener(new OnClickListener() {
-//      @Override public void onClick(View view) {
-//        if(isForThreed){
-//          showPanel(FBViewState.ThreeD);
-//        }else{
-//          showPanel(FBViewState.MODE);
-//        }
-//
-//      }
-//    });
 
     ivFbRestore.setOnClickListener(new OnClickListener() {
       @Override public void onClick(View view) {

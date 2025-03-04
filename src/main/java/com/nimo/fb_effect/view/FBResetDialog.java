@@ -83,16 +83,6 @@ public class FBResetDialog extends DialogFragment {
 
         }
 
-//        if (FBState.currentViewState == FBViewState.PORTRAIT) {
-//
-//          //通知刷新列表
-//          RxBus.get().post(FBEventAction.ACTION_SYNC_RESET, "true");
-//
-//          //通知更新滑动条显示状态
-//          RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
-//        }
-
-
         dismiss();
       }
     });

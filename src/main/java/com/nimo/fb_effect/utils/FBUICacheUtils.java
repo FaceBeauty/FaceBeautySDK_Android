@@ -4,25 +4,11 @@ import android.content.Context;
 import android.util.Log;
 import com.nimo.fb_effect.model.FBBeautyKey;
 import com.nimo.fb_effect.model.FBBeautyParam;
-//import com.nimo.fb_effect.model.HtBlushConfig;
-//import com.nimo.fb_effect.model.HtBody;
-//import com.nimo.fb_effect.model.HtEyebrowConfig;
-//import com.nimo.fb_effect.model.HtEyelashConfig;
-//import com.nimo.fb_effect.model.HtEyelineConfig;
-//import com.nimo.fb_effect.model.HtEyeshadowConfig;
 import com.nimo.fb_effect.model.FBFaceTrim;
-//import com.nimo.fb_effect.model.HtLipstickConfig;
-//import com.nimo.fb_effect.model.HtMakeUpEnum;
-//import com.nimo.fb_effect.model.HtMakeup;
-//import com.nimo.fb_effect.model.HtPupilsConfig;
 import com.nimo.fb_effect.model.FBState;
 import com.nimo.fb_effect.model.FBUICacheKey;
 import com.nimo.facebeauty.FBEffect;
-import com.nimo.facebeauty.model.FBBodyBeautyEnum;
-import com.nimo.facebeauty.model.FBBodyBeautyEnum;
 import com.nimo.facebeauty.model.FBFilterEnum;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * ui缓存工具类
@@ -43,8 +29,6 @@ public class FBUICacheUtils {
 
         //设置滤镜
         FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), getBeautyFilterName());
-//        FBUICacheUtils.setEffectFilterPosition(0);
-//        FBUICacheUtils.beautyHairPosition(0);
 
         //美肤系
         FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyClearSmoothing, beautySkinValue(FBBeautyKey.blurriness));
@@ -197,7 +181,7 @@ public class FBUICacheUtils {
                 defaultValue = 5;
                 break;
             case brightness:
-                defaultValue = 50;
+                defaultValue = 55;
                 break;
             case undereye_circles:
             case nasolabial:

@@ -35,8 +35,8 @@
 #-keep class com.google.gson.stream.** { *; }
 
 # Application classes that will be serialized/deserialized over Gson
--keep class  com.texeljoy.ht_effect.** { <fields>; }
--keep class  com.texeljoy.** { <fields>; }
+-keep class  com.nimo.fb_effect.** { <fields>; }
+-keep class  com.nimo.** { <fields>; }
 
 # Prevent proguard from stripping interface information from TypeAdapterFactory,
 # JsonSerializer, JsonDeserializer instances (so they can be used in @JsonAdapter)

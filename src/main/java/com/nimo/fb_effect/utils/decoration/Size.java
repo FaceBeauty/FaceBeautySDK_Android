@@ -6,11 +6,6 @@ import androidx.annotation.RequiresApi;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Spica27 on 2020/8/7.
- * <p>
- * 尺寸。
- */
 public class Size {
 
     private int width;

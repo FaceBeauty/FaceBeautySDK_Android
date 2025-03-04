@@ -63,11 +63,7 @@ public class FBMaskAdapter extends RecyclerView.Adapter<FBStickerViewHolder> {
     @Override
     public FBStickerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view;
-        // if (viewType == ITEM_TYPE_ONE) {
-        //     view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_ht_sticker_one, parent, false);
-        // } else {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_fb_sticker, parent, false);
-        // }
         return new FBStickerViewHolder(view);
     }
 

@@ -72,25 +72,14 @@ public class FBBeautyFilterItemViewBinder extends ItemViewBinder<FBBeautyFilterC
         .load(resID)
         // .placeholder(R.drawable.icon_placeholder)
         .into(holder.thumbIV);
-    // holder.thumbIV.setImageDrawable(HtStyleFilterEnum.values()[getPosition(holder)].getIcon(holder.itemView.getContext()));
 
-    // holder.maker.setBackgroundColor(ContextCompat.getColor
-    //     (holder.itemView.getContext(), R.color.makeup_maker));
     holder.maker.setVisibility(
         holder.itemView.isSelected() ? View.VISIBLE : View.GONE
     );
 
-    // if(HtState.currentStyle != HtStyle.YUAN_TU){
-    //   holder.itemView.setEnabled(false);
-    //   RxBus.get().post(HTEventAction.ACTION_STYLE_SELECTED,"请先取消“风格推荐”效果");
-    // }else{
-    //   holder.itemView.setEnabled(true);
-    //   RxBus.get().post(HTEventAction.ACTION_STYLE_SELECTED,"");
-    // }
     holder.itemView.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View view) {
 
-//        if(FBState.currentMakeUpStyle.getName().isEmpty()){
         if(true){
           if (holder.itemView.isSelected()) {
             return;
@@ -101,7 +90,6 @@ public class FBBeautyFilterItemViewBinder extends ItemViewBinder<FBBeautyFilterC
 
 
           FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), item.getName());
-          //HtUICacheUtils.beautyFilterValue(item, 100);
 
           FBState.currentStyleFilter = item;
 

@@ -36,11 +36,6 @@ import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- * Created by Spica 27 on 2018/8/7.
- * <p>
- * 拍照/录制视频的按钮。
- */
 public class FBMagicButton extends AppCompatImageView implements Runnable {
 
     /**
