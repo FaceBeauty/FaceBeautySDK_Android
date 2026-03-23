@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.nimo.fb_effect.utils.FBConfigTools;
 import com.nimo.facebeauty.FBEffect;
 import com.nimo.facebeauty.model.FBItemEnum;
+
+import java.io.File;
 import java.util.List;
 
 /**
@@ -15,23 +17,23 @@ public class FBStickerConfig {
   /**
    * stickers
    */
-  private List<FBSticker> fb_sticker;
+  private List<FBSticker> sticker;
 
   @Override public String toString() {
     return "FBStickerConfig{" +
-        "fbStickers=" + fb_sticker.size() +
+        "fbStickers=" + sticker.size() +
         "个}";
   }
 
   public List<FBSticker> getStickers() {
-    return fb_sticker;
+    return sticker;
   }
 
   public FBStickerConfig(List<FBSticker> stickers) {
-    this.fb_sticker = stickers;
+    this.sticker = stickers;
   }
 
-  public void setStickers(List<FBSticker> tiStickers) { this.fb_sticker = tiStickers;}
+  public void setStickers(List<FBSticker> tiStickers) { this.sticker = tiStickers;}
 
   public static class FBSticker {
 
@@ -88,7 +90,8 @@ public class FBStickerConfig {
     public void setCategory(String category) { this.category = category;}
 
     public String getIcon() {
-      return FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemSticker.getValue()) + "/ICON/" + this.icon;
+//      return FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemSticker.getValue()) + "/ICON/" + this.icon;
+      return FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemSticker.getValue()) + File.separator + this.name + ".png";
 
     }
 

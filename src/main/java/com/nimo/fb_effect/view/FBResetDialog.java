@@ -3,9 +3,11 @@ package com.nimo.fb_effect.view;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import androidx.annotation.NonNull;;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,7 +42,7 @@ public class FBResetDialog extends DialogFragment {
 
     Window window = dialog.getWindow();
     if (window != null) {
-      WindowManager.LayoutParams params = window.getAttributes();
+      LayoutParams params = window.getAttributes();
       params.width = LayoutParams.MATCH_PARENT;
       params.height = LayoutParams.WRAP_CONTENT;
       params.gravity = Gravity.CENTER;
@@ -57,7 +59,19 @@ public class FBResetDialog extends DialogFragment {
     root.findViewById(R.id.btn_confirm).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        if (FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
+          if (FBState.currentViewState == FBViewState.PORTRAIT) {
+              //当前是绿幕
+              FBUICacheUtils.resetGreencreenValue(getContext());
+              FBUICacheUtils.greenscreenResetEnable(false);
+
+              //通知刷新列表
+              RxBus.get().post(FBEventAction.ACTION_SYNC_RESET, "true");
+
+              //通知更新滑动条显示状态
+              RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
+          }
+
+          if (FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
           //当前是美肤
           FBUICacheUtils.resetSkinValue(getContext());
           FBUICacheUtils.beautySkinResetEnable(false);
@@ -68,7 +82,20 @@ public class FBResetDialog extends DialogFragment {
           //通知更新滑动条显示状态
           RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
         }
+          //当前是脸型
+          if (FBState.currentSecondViewState == FBViewState.FACE_SHAPE) {
 
+              FBUICacheUtils.resetFaceShapeValue(getContext());
+              FBUICacheUtils.faceShapeResetEnable(false);
+              FBUICacheUtils.resetFaceTrimValue(getContext());
+
+              FBUICacheUtils.beautyFaceTrimResetEnable(false);
+              //通知刷新列表
+              RxBus.get().post(FBEventAction.ACTION_SYNC_RESET, "true");
+
+              //通知更新滑动条显示状态
+              RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
+          }
         if (FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
           //当前是美型
           FBUICacheUtils.resetFaceTrimValue(getContext());
@@ -82,7 +109,33 @@ public class FBResetDialog extends DialogFragment {
           RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
 
         }
+          if (FBState.currentSecondViewState == FBViewState.BEAUTY_BODY) {
+              //当前是美体
+              FBUICacheUtils.resetBeautyBodyValue(getContext());
+              FBUICacheUtils.beautyBodyResetEnable(false);
 
+              //通知刷新列表
+              RxBus.get().post(FBEventAction.ACTION_SYNC_RESET, "true");
+
+              //通知更新滑动条显示状态
+              RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
+
+          }
+          if (FBState.currentViewState == FBViewState.BEAUTY_MAKE_UP) {
+              //当前是美妆
+              for(int i = 0; i < 7; i++){
+                  FBUICacheUtils.resetMakeUpValue(getContext(),i);
+              }
+
+              FBUICacheUtils.beautyMakeUpResetEnable(false);
+
+              //通知刷新列表
+              RxBus.get().post(FBEventAction.ACTION_SYNC_RESET, "true");
+
+              //通知更新滑动条显示状态
+              RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
+
+          }
         dismiss();
       }
     });

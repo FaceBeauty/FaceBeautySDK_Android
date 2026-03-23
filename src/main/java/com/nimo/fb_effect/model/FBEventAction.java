@@ -5,6 +5,8 @@ package com.nimo.fb_effect.model;
  */
 public class FBEventAction {
 
+  //图片渲染
+  public static final String ACTION_RENDER_PICTURE = "ACTION_RENDER_PICTURE";
   //切换主题
   public static final String ACTION_CHANGE_THEME = "ACTION_CHANGE_THEME";
 
@@ -20,10 +22,14 @@ public class FBEventAction {
   public static final String ACTION_SYNC_STICKER_ITEM_CHANGED = "ACTION_SYNC_STICKER_ITEM_CHANGED";
   //更新当前选中的Item的点
   public static final String ACTION_SYNC_MASK_ITEM_CHANGED = "ACTION_SYNC_MASK_ITEM_CHANGED";
+  public static final String ACTION_SYNC_HAIR_ITEM_CHANGED = "ACTION_SYNC_HAIR_ITEM_CHANGED";
+  public static final String ACTION_SYNC_LIGHT_MAKEUP_ITEM_CHANGED = "ACTION_SYNC_LIGHT_MAKEUP_ITEM_CHANGED";
   //更新当前选中的Item的点
   public static final String ACTION_SYNC_GIFT_ITEM_CHANGED = "ACTION_SYNC_GIFT_ITEM_CHANGED";
   //更新当前选中的Item的点
   public static final String ACTION_SYNC_WATERMARK_ITEM_CHANGED = "ACTION_SYNC_WATERMARK_ITEM_CHANGED";
+  public static final String ACTION_SHOW_WATERMARK_ITEM = "ACTION_SHOW_WATERMARK_ITEM";
+  public static final String ACTION_SHOW_WATERMARK_TAKEPHOTO = "ACTION_SHOW_WATERMARK_TAKEPHOTO";
 
   //更新当前选中的Item的点
   public static final String ACTION_SYNC_PORTRAITAI_ITEM_CHANGED = "ACTION_SYNC_PORTRAITAI_ITEM_CHANGED";

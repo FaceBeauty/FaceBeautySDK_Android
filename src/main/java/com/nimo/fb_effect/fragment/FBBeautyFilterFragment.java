@@ -60,7 +60,7 @@ public class FBBeautyFilterFragment extends FBBaseLazyFragment {
 
     if (filterList == null) {
       FBConfigTools.getInstance().getStyleFiltersConfig(new FBConfigCallBack<List<FBBeautyFilter>>() {
-        @Override public void success(List<FBBeautyFilterConfig.FBBeautyFilter> list) {
+        @Override public void success(List<FBBeautyFilter> list) {
           items.addAll(list);
           initRecyclerView();
         }
