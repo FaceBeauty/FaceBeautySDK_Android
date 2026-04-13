@@ -31,6 +31,7 @@
   import com.hwangjr.rxbus.annotation.Subscribe;
   import com.hwangjr.rxbus.annotation.Tag;
   import com.hwangjr.rxbus.thread.EventThread;
+  import com.nimo.fb_effect.fragment.BeautyMakeUpFragment;
   import com.nimo.fb_effect.fragment.FBARMaskFragment;
   import com.nimo.fb_effect.fragment.FBARStickerFragment;
   import com.nimo.fb_effect.fragment.FBBeautyFragment;
@@ -587,6 +588,16 @@
               switchModePanel(new LightMakeupFragment(),"light_makeup");
               FBState.currentViewState = viewState;
               FBState.currentSecondViewState = FBViewState.LIGHT_MAKEUP;
+              break;
+          case BEAUTY_MAKE_UP:
+              ivFbTrigger.setVisibility(View.GONE);
+              ivFbRestore.setVisibility(View.GONE);
+              shutterIv.setVisibility(View.VISIBLE);
+              btnShutter.setVisibility(View.GONE);
+              stickerView.setVisibility(VISIBLE);
+              switchModePanel( new BeautyMakeUpFragment(),"makeup");
+              FBState.currentViewState = viewState;
+              FBState.currentSecondViewState = FBViewState.BEAUTY_MAKE_UP;
               break;
 
       }
