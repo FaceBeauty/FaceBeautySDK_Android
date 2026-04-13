@@ -3,9 +3,6 @@
 
     <!-- 首页 -->
     <string name="beauty">Beauty</string>
-    <string name="portrait_beautification">Portrait beautification</string>
-    <string name="special_effects_animation">Special effects animation</string>
-    <string name="human_effects">Human effects</string>
     <string name="makeup">Makeup</string>
     <string name="facial_special_effects">Facial special effects</string>
     <string name="gesture">Gesture</string>

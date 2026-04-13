@@ -3,9 +3,6 @@
 
     <!-- 首页 -->
     <string name="beauty">美颜</string>
-    <string name="portrait_beautification">人像美化</string>
-    <string name="special_effects_animation">特效动画</string>
-    <string name="human_effects">人体特效</string>
     <string name="makeup">轻彩妆</string>
     <string name="facial_special_effects">人脸特效</string>
 
