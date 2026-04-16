@@ -24,11 +24,8 @@ import com.nimo.facebeauty.model.FBBodyBeautyEnum;
 import com.nimo.facebeauty.model.FBMakeupEnum;
 import com.nimo.fb_effect.R;
 import com.nimo.fb_effect.model.FBEventAction;
-import com.nimo.fb_effect.model.FBFaceShape;
-import com.nimo.fb_effect.model.FBFaceShapeKey;
 import com.nimo.fb_effect.model.FBFaceShapeReshapeMap;
 import com.nimo.fb_effect.model.FBFaceShapeValue;
-import com.nimo.fb_effect.model.FBFaceTrim;
 import com.nimo.fb_effect.model.FBViewState;
 import com.nimo.fb_effect.model.FBBeautyKey;
 import com.nimo.fb_effect.model.FBBeautyParam;
@@ -371,11 +368,11 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
             } else {
                 setVisibility(VISIBLE);
             }
-
+            Log.d("gao", "syncProgress:== ");
             int progress = FBUICacheUtils
-                    .setLightMakeupValue(FBState.currentLightMakeup.getName());
+                    .getLightMakeupValue(FBState.currentLightMakeup.getName());
             fbSeekBar.setProgress(progress);
-            styleNormal(FBUICacheUtils.setLightMakeupValue(FBState.currentLightMakeup.getName()));
+            styleNormal(FBUICacheUtils.getLightMakeupValue(FBState.currentLightMakeup.getName()));
             return;
         }
         //美发
@@ -995,6 +992,8 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
             styleNormal(progress);
             FBUICacheUtils.setLightMakeupValue(FBState.currentLightMakeup.getName(), progress);
+            Log.d("gao", "onProgressChanged:progress "+progress);
+            Log.d("gao", "onProgressChanged: "+FBState.currentLightMakeup.getName());
             FBEffect.shareInstance().setStyle(FBState.currentLightMakeup.getName(),progress);
             return;
         }

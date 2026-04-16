@@ -91,9 +91,7 @@ public class LightMakeupItemViewBinder extends ItemViewBinder<LightMakeupConfig.
                 if (holder.itemView.isSelected()) {
                     return;
                 }
-                Log.d("gao", "getName: "+item.getName());
-                Log.d("gao", "setLightMakeupValue: "+FBUICacheUtils.setLightMakeupValue(item.getName()));
-                FBEffect.shareInstance().setStyle(item.getName(),FBUICacheUtils.setLightMakeupValue(item.getName()));
+                FBEffect.shareInstance().setStyle(item.getName(),FBUICacheUtils.getLightMakeupValue(item.getName()));
                 FBState.currentLightMakeup = item;
 
                 holder.itemView.setSelected(true);

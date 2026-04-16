@@ -85,18 +85,21 @@ public class FBUICacheUtils {
         FBEffect.shareInstance().setReshape(FBBeautyParam.FBReshapeEyeEnlarging, 60);//大眼60
         FBEffect.shareInstance().setReshape(FBBeautyParam.FBReshapeCheekThinning, 60);//瘦脸60
         FBEffect.shareInstance().setReshape(FBBeautyParam.FBReshapeCheekNarrowing, 15);//窄脸15
-        //轻美妆
-//        FBEffect.shareInstance().setStyle(FBUICacheUtils.getLightMakeupName(),FBUICacheUtils.getL );//窄脸15
-        for (int i = 0; i < 7; i++) {
-            if (i >= 0 && i <= 2) {
-                FBEffect.shareInstance().setMakeup(i, "type", getMakeupItemNameOrTypeCache(i));
-                FBEffect.shareInstance().setMakeup(i, "color", getMakeupItemColorCache(i));
-            } else {
-                FBEffect.shareInstance().setMakeup(i, "name", getMakeupItemNameOrTypeCache(i));
-            }
 
-            FBEffect.shareInstance().setMakeup(i, "value", String.valueOf(getMakeupItemValueCache(i, getMakeupItemNameOrTypeCache(i))));
-        }
+        //注意：轻美妆和美妆不能同时使用
+        //轻美妆
+//            FBEffect.shareInstance().setStyle(getLightMakeupName(), getLightMakeupValue(getLightMakeupName()));
+        //美妆
+//        for (int i = 0; i < 7; i++) {
+//            if (i >= 0 && i <= 2) {
+//                FBEffect.shareInstance().setMakeup(i, "type", getMakeupItemNameOrTypeCache(i));
+//                FBEffect.shareInstance().setMakeup(i, "color", getMakeupItemColorCache(i));
+//            } else {
+//                FBEffect.shareInstance().setMakeup(i, "name", getMakeupItemNameOrTypeCache(i));
+//            }
+//
+//            FBEffect.shareInstance().setMakeup(i, "value", String.valueOf(getMakeupItemValueCache(i, getMakeupItemNameOrTypeCache(i))));
+//        }
     }
 
     //---------美肤选中了哪个-------------------
@@ -309,7 +312,7 @@ public class FBUICacheUtils {
         SharedPreferencesUtil.put(FBUICacheKey.LIGHT_MAKEUP_SELECT_NAME.name(), name);
     }
 
-    public static int setLightMakeupValue(String lightMakeupName) {
+    public static int getLightMakeupValue(String lightMakeupName) {
         return SharedPreferencesUtil.get("lightMakeup_" + lightMakeupName, 50);
     }
 
