@@ -978,6 +978,226 @@
       "key": "FILTER_STYLE_LIGHT4",
       "defaultValue": 40,
       "sliderType": 1
+    },
+    {
+      "title": "Yinyan1",
+      "title_en": "Yinyan1",
+      "name": "yinyan1",
+      "icon": "filter_yinyan1_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN1",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan2",
+      "title_en": "Yinyan2",
+      "name": "yinyan2",
+      "icon": "filter_yinyan2_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN2",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan3",
+      "title_en": "Yinyan3",
+      "name": "yinyan3",
+      "icon": "filter_yinyan3_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN3",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan4",
+      "title_en": "Yinyan4",
+      "name": "yinyan4",
+      "icon": "filter_yinyan4_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN4",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan5",
+      "title_en": "Yinyan5",
+      "name": "yinyan5",
+      "icon": "filter_yinyan5_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN5",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan6",
+      "title_en": "Yinyan6",
+      "name": "yinyan6",
+      "icon": "filter_yinyan6_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN6",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan7",
+      "title_en": "Yinyan7",
+      "name": "yinyan7",
+      "icon": "filter_yinyan7_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN7",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan8",
+      "title_en": "Yinyan8",
+      "name": "yinyan8",
+      "icon": "filter_yinyan8_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN8",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan9",
+      "title_en": "Yinyan9",
+      "name": "yinyan9",
+      "icon": "filter_yinyan9_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN9",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan10",
+      "title_en": "Yinyan10",
+      "name": "yinyan10",
+      "icon": "filter_yinyan10_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN10",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan11",
+      "title_en": "Yinyan11",
+      "name": "yinyan11",
+      "icon": "filter_yinyan11_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN11",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan12",
+      "title_en": "Yinyan12",
+      "name": "yinyan12",
+      "icon": "filter_yinyan12_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN12",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan13",
+      "title_en": "Yinyan13",
+      "name": "yinyan13",
+      "icon": "filter_yinyan13_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN13",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan14",
+      "title_en": "Yinyan14",
+      "name": "yinyan14",
+      "icon": "filter_yinyan14_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN14",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan15",
+      "title_en": "Yinyan15",
+      "name": "yinyan15",
+      "icon": "filter_yinyan15_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN15",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan16",
+      "title_en": "Yinyan16",
+      "name": "yinyan16",
+      "icon": "filter_yinyan16_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN16",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan17",
+      "title_en": "Yinyan17",
+      "name": "yinyan17",
+      "icon": "filter_yinyan17_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN17",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan18",
+      "title_en": "Yinyan18",
+      "name": "yinyan18",
+      "icon": "filter_yinyan18_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN18",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan19",
+      "title_en": "Yinyan19",
+      "name": "yinyan19",
+      "icon": "filter_yinyan19_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN19",
+      "defaultValue": 100,
+      "sliderType": 1
+    },
+    {
+      "title": "Yinyan20",
+      "title_en": "Yinyan20",
+      "name": "yinyan20",
+      "icon": "filter_yinyan20_icon",
+      "category": "yinyan",
+      "download": 2,
+      "key": "FILTER_STYLE_YINYAN20",
+      "defaultValue": 100,
+      "sliderType": 1
     }
   ]
 }

@@ -1,0 +1,2 @@
+-keep class com.nimo.fb_effect.** { *; }
+-keep class com.nimo.** { *; }
